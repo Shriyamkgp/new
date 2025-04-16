@@ -1,4 +1,9 @@
-!pip install -r requirements.txt
+import subprocess
+import sys
+
+# Install all packages listed in requirements.txt
+subprocess.check_call([sys.executable, "-m", "pip", "install", "-r", "requirements.txt"])
+
 import os
 import regex as re
 from scipy import signal
